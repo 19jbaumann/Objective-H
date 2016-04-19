@@ -12,6 +12,7 @@
 		DCA912241CC6A8B4008DB682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA912221CC6A8B4008DB682 /* Main.storyboard */; };
 		DCA912261CC6A8B4008DB682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA912251CC6A8B4008DB682 /* Assets.xcassets */; };
 		DCA912291CC6A8B4008DB682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */; };
+		DCA912311CC6AC9D008DB682 /* TheQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA912301CC6AC9D008DB682 /* TheQuestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DCA912251CC6A8B4008DB682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCA912281CC6A8B4008DB682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCA9122A1CC6A8B4008DB682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA912301CC6AC9D008DB682 /* TheQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheQuestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DCA912251CC6A8B4008DB682 /* Assets.xcassets */,
 				DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */,
 				DCA9122A1CC6A8B4008DB682 /* Info.plist */,
+				DCA912301CC6AC9D008DB682 /* TheQuestions.swift */,
 			);
 			path = "The Vids Quiz";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA912211CC6A8B4008DB682 /* ViewController.swift in Sources */,
+				DCA912311CC6AC9D008DB682 /* TheQuestions.swift in Sources */,
 				DCA9121F1CC6A8B4008DB682 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +292,7 @@
 				DCA9122F1CC6A8B4008DB682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
