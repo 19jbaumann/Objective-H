@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCA9121F1CC6A8B4008DB682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9121E1CC6A8B4008DB682 /* AppDelegate.swift */; };
+		DCA912211CC6A8B4008DB682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA912201CC6A8B4008DB682 /* ViewController.swift */; };
+		DCA912241CC6A8B4008DB682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA912221CC6A8B4008DB682 /* Main.storyboard */; };
+		DCA912261CC6A8B4008DB682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA912251CC6A8B4008DB682 /* Assets.xcassets */; };
+		DCA912291CC6A8B4008DB682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCA9121B1CC6A8B4008DB682 /* The Vids Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Vids Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA9121E1CC6A8B4008DB682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCA912201CC6A8B4008DB682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCA912231CC6A8B4008DB682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCA912251CC6A8B4008DB682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCA912281CC6A8B4008DB682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCA9122A1CC6A8B4008DB682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCA912181CC6A8B4008DB682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCA912121CC6A8B4008DB682 = {
+			isa = PBXGroup;
+			children = (
+				DCA9121D1CC6A8B4008DB682 /* The Vids Quiz */,
+				DCA9121C1CC6A8B4008DB682 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCA9121C1CC6A8B4008DB682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9121B1CC6A8B4008DB682 /* The Vids Quiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCA9121D1CC6A8B4008DB682 /* The Vids Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9121E1CC6A8B4008DB682 /* AppDelegate.swift */,
+				DCA912201CC6A8B4008DB682 /* ViewController.swift */,
+				DCA912221CC6A8B4008DB682 /* Main.storyboard */,
+				DCA912251CC6A8B4008DB682 /* Assets.xcassets */,
+				DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */,
+				DCA9122A1CC6A8B4008DB682 /* Info.plist */,
+			);
+			path = "The Vids Quiz";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCA9121A1CC6A8B4008DB682 /* The Vids Quiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA9122D1CC6A8B4008DB682 /* Build configuration list for PBXNativeTarget "The Vids Quiz" */;
+			buildPhases = (
+				DCA912171CC6A8B4008DB682 /* Sources */,
+				DCA912181CC6A8B4008DB682 /* Frameworks */,
+				DCA912191CC6A8B4008DB682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Vids Quiz";
+			productName = "The Vids Quiz";
+			productReference = DCA9121B1CC6A8B4008DB682 /* The Vids Quiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCA912131CC6A8B4008DB682 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Objective-Hue";
+				TargetAttributes = {
+					DCA9121A1CC6A8B4008DB682 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = DCA912161CC6A8B4008DB682 /* Build configuration list for PBXProject "The Vids Quiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCA912121CC6A8B4008DB682;
+			productRefGroup = DCA9121C1CC6A8B4008DB682 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCA9121A1CC6A8B4008DB682 /* The Vids Quiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCA912191CC6A8B4008DB682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA912291CC6A8B4008DB682 /* LaunchScreen.storyboard in Resources */,
+				DCA912261CC6A8B4008DB682 /* Assets.xcassets in Resources */,
+				DCA912241CC6A8B4008DB682 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCA912171CC6A8B4008DB682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA912211CC6A8B4008DB682 /* ViewController.swift in Sources */,
+				DCA9121F1CC6A8B4008DB682 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCA912221CC6A8B4008DB682 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCA912231CC6A8B4008DB682 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCA912281CC6A8B4008DB682 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCA9122B1CC6A8B4008DB682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCA9122C1CC6A8B4008DB682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCA9122E1CC6A8B4008DB682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Vids Quiz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Objective-H.The-Vids-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCA9122F1CC6A8B4008DB682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The Vids Quiz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Objective-H.The-Vids-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCA912161CC6A8B4008DB682 /* Build configuration list for PBXProject "The Vids Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA9122B1CC6A8B4008DB682 /* Debug */,
+				DCA9122C1CC6A8B4008DB682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCA9122D1CC6A8B4008DB682 /* Build configuration list for PBXNativeTarget "The Vids Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA9122E1CC6A8B4008DB682 /* Debug */,
+				DCA9122F1CC6A8B4008DB682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCA912131CC6A8B4008DB682 /* Project object */;
+}
