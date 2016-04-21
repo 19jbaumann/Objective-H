@@ -10,7 +10,7 @@ import GameKit
 
 struct GameQuestions {
     
-    let questions = ["In Pokemon the pokemon shiny apearence rate is 1/4096", "In Pokemon gen V the starters are Oshawott Snivy and Chimchar",  "In Pokemon "]
+    let questions = ["In Pokemon the pokemon shiny apearence rate is 1/4096", "In Pokemon gen V the starters are Oshawott Snivy and Chimchar",  "Is Pokemon Green in English?", "In Pokemon does Aura Sphere has a base power of 90 and never misses?", "In Pokemon is S.S.A.T a Pokemon?"]
     
     func getRandomFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(questions.count)
