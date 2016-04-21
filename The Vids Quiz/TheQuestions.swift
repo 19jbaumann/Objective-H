@@ -10,7 +10,7 @@ import GameKit
 
 struct GameQuestions {
     
-    let questions = [" Inhow did Alduin die?", "How do you stop the moon from destroying the planet in Majora's Mask"]
+    let questions = [" Inhow did Alduin die?", "How do you stop the moon from destroying the planet in Majora's Mask","Is a Hunter stronger than a Grunt in Halo 3"]
     
     func getRandomFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(questions.count)
