@@ -26,11 +26,17 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b00-oW-0bq">
                                 <rect key="frame" x="355" y="458" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="No"/>
+                                <connections>
+                                    <action selector="factButtonNo" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIf-Sh-hLs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-Yi-Agi">
                                 <rect key="frame" x="167" y="458" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Yes"/>
+                                <connections>
+                                    <action selector="factButtonYes" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9Z-5J-TYf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

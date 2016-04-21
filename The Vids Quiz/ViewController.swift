@@ -21,6 +21,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func factButtonNo() {
+    }
+
+    @IBAction func factButtonYes() {
+    }
+
 }
 
 var hello = "Hi"
