@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let questions = GameQuestions()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +22,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var gameQuestionLabel: UILabel!
 
+    @IBOutlet weak var pressedButton: UILabel!
+    
     @IBAction func factButtonNo() {
+        gameQuestionLabel.text = questions.getRandomFact()
+        pressedButton.text = "You answered no?"
     }
 
     @IBAction func factButtonYes() {
+        gameQuestionLabel.text = questions.getRandomFact()
+        pressedButton.text = "You answered yes?"
     }
 
 }
