@@ -37,6 +37,13 @@ class ViewController: UIViewController {
         pressedButton.text = "You answered yes?"
  
 }
+    
+    @IBAction func showYesButton() {
+        let randomColor = ColorModel().getrandomColor()
+        view.backgroundColor = randomColor
+        factButtonYes().tintColor = randomColor
+        gameQuestionLabel.text = gameQuestionLabel.getRandomFact()
+    }
 }
 var hello = "Hi"
 

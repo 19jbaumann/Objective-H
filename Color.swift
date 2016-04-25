@@ -5,11 +5,11 @@
 //  Created by Coder on 4/25/16.
 //  Copyright © 2016 Objective-Hue. All rights reserved.
 
+
 import UIKit
 import GameKit
 struct ColorModel {
-    var hue = "colors"
-    let color = [
+    let colors = [
         UIColor(red: 98/255.0, green: 187/255.0, blue: 181/255.0, alpha: 1.0),// teal color
         UIColor(red: 90/255.0, green: 187/255.0, blue: 181/255.0, alpha: 1.0),//
         UIColor(red: 222/255.0, green: 171/255.0, blue: 66/255.0, alpha: 1.0),
@@ -26,12 +26,16 @@ struct ColorModel {
         UIColor(red: 95/255.0, green: 194/255.0, blue: 193/255.0, alpha: 1.0),
         UIColor(red: 35/255.0, green: 76/255.0, blue: 212/255.0, alpha: 1.0)
     ]
+    
     func getrandomColor() -> UIColor {
-        let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(color.count)
-        return color[randomNumber]
+        let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(colors.count)
+        return colors[randomNumber]
+        
     }
     
+    
 }
+
 
 
 
