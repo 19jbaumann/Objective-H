@@ -27,13 +27,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var pressedButton: UILabel!
     
     @IBAction func factButtonNo() {
-        gameQuestionLabel.text = questions.getRandomFact()
+        gameQuestionLabel.text = questions.getQuestion()
         pressedButton.text = "You answered no?"
     }
 
     @IBAction func factButtonYes() {
-        gameQuestionLabel.text = questions.getRandomFact()
+        gameQuestionLabel.text = questions.getQuestion()
         pressedButton.text = "You answered yes?"
+        
+    
     }
 
 }

@@ -8,10 +8,14 @@
 
 import GameKit
 
-var newQuestions = 
+struct newQuestion {
+    let question: GameQuestions
+    let answer: Bool
+}
+
+let question1 = newQuestion(question: GameQuestions[1], answer: true)
 
 
-
-
-func nextQuestion() {
+func TrueOrFalse() {
+    
 }
