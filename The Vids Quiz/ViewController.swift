@@ -31,12 +31,12 @@ class ViewController: UIViewController {
         pressedButton.text = "You answered no?"
     }
 
+   
     @IBAction func factButtonYes() {
         gameQuestionLabel.text = questions.getRandomFact()
         pressedButton.text = "You answered yes?"
-    }
-
+ 
 }
-
+}
 var hello = "Hi"
 

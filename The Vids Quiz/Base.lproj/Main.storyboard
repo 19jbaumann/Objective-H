@@ -35,7 +35,7 @@
                                 <rect key="frame" x="150" y="426" width="46" height="30"/>
                                 <state key="normal" title="Yes"/>
                                 <connections>
-                                    <action selector="factButtonYes" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9Z-5J-TYf"/>
+                                    <action selector="factButtonYes" destination="BYZ-38-t0r" eventType="touchUpInside" id="57j-Ww-H8E"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwE-lf-8iP">

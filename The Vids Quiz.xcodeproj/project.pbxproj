@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC66B1AD1CCE92E200B76E86 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66B1AC1CCE92E200B76E86 /* File.swift */; };
 		DCA9121F1CC6A8B4008DB682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9121E1CC6A8B4008DB682 /* AppDelegate.swift */; };
 		DCA912211CC6A8B4008DB682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA912201CC6A8B4008DB682 /* ViewController.swift */; };
 		DCA912241CC6A8B4008DB682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA912221CC6A8B4008DB682 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC66B1AC1CCE92E200B76E86 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DCA9121B1CC6A8B4008DB682 /* The Vids Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Vids Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA9121E1CC6A8B4008DB682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA912201CC6A8B4008DB682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		DCA912121CC6A8B4008DB682 = {
 			isa = PBXGroup;
 			children = (
+				DC66B1AC1CCE92E200B76E86 /* File.swift */,
 				DCA9121D1CC6A8B4008DB682 /* The Vids Quiz */,
 				DCA9121C1CC6A8B4008DB682 /* Products */,
 			);
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA912211CC6A8B4008DB682 /* ViewController.swift in Sources */,
+				DC66B1AD1CCE92E200B76E86 /* File.swift in Sources */,
 				DCA912311CC6AC9D008DB682 /* TheQuestions.swift in Sources */,
 				DCA9121F1CC6A8B4008DB682 /* AppDelegate.swift in Sources */,
 			);
