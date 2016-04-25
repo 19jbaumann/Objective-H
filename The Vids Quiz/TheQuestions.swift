@@ -10,7 +10,7 @@ import GameKit
 
 struct GameQuestions {
     
-    let questions = ["In Pokemon the pokemon shiny apearence rate is 1/4096", "In Pokemon gen V the starters are Oshawott Snivy and Chimchar",  "Is Pokemon Green in English?", "In Pokemon does Aura Sphere has a base power of 90 and never misses?", "In Pokemon is S.S.A.T a Pokemon?"]
+    let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the Moon in Zelda Majoras Mask","Is a Hunter stronger than a Grunt in Halo 3" ,"Is the SSG 08 the strongest Sniper in CSGO" ,"In Halo Combat Evolved the map The Silent Cartographer or the 4th level, Can you walk out in the water Forever?"]
     
     func getRandomFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(questions.count)
