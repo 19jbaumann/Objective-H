@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC66B1AC1CCE92E200B76E86 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DC66B1AC1CCE92E200B76E86 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = ../Color.swift; sourceTree = "<group>"; };
 		DCA9121B1CC6A8B4008DB682 /* The Vids Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Vids Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA9121E1CC6A8B4008DB682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA912201CC6A8B4008DB682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,6 @@
 		DCA912121CC6A8B4008DB682 = {
 			isa = PBXGroup;
 			children = (
-				DC66B1AC1CCE92E200B76E86 /* Color.swift */,
 				DCA9121D1CC6A8B4008DB682 /* The Vids Quiz */,
 				DCA9121C1CC6A8B4008DB682 /* Products */,
 			);
@@ -66,6 +65,7 @@
 				DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */,
 				DCA9122A1CC6A8B4008DB682 /* Info.plist */,
 				DCA912301CC6AC9D008DB682 /* TheQuestions.swift */,
+				DC66B1AC1CCE92E200B76E86 /* Color.swift */,
 			);
 			path = "The Vids Quiz";
 			sourceTree = "<group>";

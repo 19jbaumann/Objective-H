@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
- let questions = GameQuestions()
+let questions = GameQuestions()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +32,13 @@ class ViewController: UIViewController {
     }
 
    
-    @IBAction func factButtonYes() {
+    @IBAction func factButtonYes(){
         gameQuestionLabel.text = questions.getRandomFact()
         pressedButton.text = "You answered yes?"
+        let randomColor = ColorModel().getrandomColor()
+        view.backgroundColor = randomColor
         
-    
     }
 }
-var hello = "Hi"
+
 
