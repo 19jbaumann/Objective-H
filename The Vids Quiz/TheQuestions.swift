@@ -24,4 +24,12 @@ let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the 
         
         return questions[randomNumber]
     }
+    
+    func newRandomNumber() -> String {
+        let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(2)
+        
+        return questions[randomNumber]
+    }
 }
+
+
