@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let questions = GameQuestions()
+ let questions = GameQuestions()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +27,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var pressedButton: UILabel!
     
     @IBAction func factButtonNo() {
-        gameQuestionLabel.text = questions.getQuestion()
+        gameQuestionLabel.text = questions.getRandomFact()
         pressedButton.text = "You answered no?"
     }
 
    
     @IBAction func factButtonYes() {
-        gameQuestionLabel.text = questions.getQuestion()
+        gameQuestionLabel.text = questions.getRandomFact()
         pressedButton.text = "You answered yes?"
         
     

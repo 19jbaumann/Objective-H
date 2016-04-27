@@ -14,7 +14,6 @@
 		DCA912261CC6A8B4008DB682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA912251CC6A8B4008DB682 /* Assets.xcassets */; };
 		DCA912291CC6A8B4008DB682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */; };
 		DCA912311CC6AC9D008DB682 /* TheQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA912301CC6AC9D008DB682 /* TheQuestions.swift */; };
-		DCEDC8CB1CCE8F8100CE8107 /* CurrentQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEDC8CA1CCE8F8100CE8107 /* CurrentQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		DCA912281CC6A8B4008DB682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCA9122A1CC6A8B4008DB682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA912301CC6AC9D008DB682 /* TheQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheQuestions.swift; sourceTree = "<group>"; };
-		DCEDC8CA1CCE8F8100CE8107 /* CurrentQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				DCA912271CC6A8B4008DB682 /* LaunchScreen.storyboard */,
 				DCA9122A1CC6A8B4008DB682 /* Info.plist */,
 				DCA912301CC6AC9D008DB682 /* TheQuestions.swift */,
-				DCEDC8CA1CCE8F8100CE8107 /* CurrentQuestion.swift */,
 			);
 			path = "The Vids Quiz";
 			sourceTree = "<group>";
@@ -148,7 +145,6 @@
 				DC66B1AD1CCE92E200B76E86 /* Color.swift in Sources */,
 				DCA912311CC6AC9D008DB682 /* TheQuestions.swift in Sources */,
 				DCA9121F1CC6A8B4008DB682 /* AppDelegate.swift in Sources */,
-				DCEDC8CB1CCE8F8100CE8107 /* CurrentQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
