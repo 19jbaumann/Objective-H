@@ -17,7 +17,7 @@ let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the 
     
     let trueQuestions = []
     
-    let falseQuestions = []
+    let falseQuestions = ["Are you able to destroy the Moon in Zelda Majoras Mask","Is the SSG 08 the strongest Sniper in CSGO", ""]
 
     func getRandomFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(questions.count)
