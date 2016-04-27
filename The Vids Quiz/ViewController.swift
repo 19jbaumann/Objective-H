@@ -29,6 +29,9 @@ let questions = GameQuestions()
     @IBAction func factButtonNo() {
         gameQuestionLabel.text = questions.getRandomFact()
         pressedButton.text = "You answered no?"
+        ColorModel().getrandomColor()
+        let randomColor = ColorModel().getrandomColor()
+        view.backgroundColor = randomColor
     }
 
    
