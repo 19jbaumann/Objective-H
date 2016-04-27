@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let questions = GameQuestions()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
