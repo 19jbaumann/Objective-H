@@ -8,36 +8,20 @@
 
 import GameKit
 
-let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the Moon in Zelda Majoras Mask","Is a Hunter stronger than a Grunt in Halo 3" ,"Is the SSG 08 the strongest Sniper in CSGO" ,"In Halo Combat Evolved the map The Silent Cartographer or the 4th level, Can you walk out in the water Forever?"]
-
 
 
 struct GameQuestions {
     
-    let question: Array = questions
-    
-    let answer: Bool
-    
-    func checkAnswer() {
-        
-        var currentQuestion = GameQuestions(answer: true)
-        
-        
-        
-    }
-    
-    func getQuestion() -> String {
-    
-    return questions[0]
-    
-        
-    
-    }
-    //func getRandomFact() -> String {
-       // let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(questions.count)
-        
-       // return questions[randomNumber]
-   // }
-}
+let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the Moon in Zelda Majoras Mask","Is a Hunter stronger than a Grunt in Halo 3" ,"Is the SSG 08 the strongest Sniper in CSGO" ,"In Halo Combat Evolved the map The Silent Cartographer or the 4th level, Can you walk out in the water Forever?"]
 
-//
+    
+    let trueQuestions = []
+    
+    let falseQuestions = []
+
+    func getRandomFact() -> String {
+        let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(questions.count)
+        
+        return questions[randomNumber]
+    }
+}
