@@ -7,6 +7,19 @@
 //
 
 import UIKit
+import GameKit
+
+/*
+func TrueorFalseNumber() -> Int {
+    let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(2)
+    
+    if randomNumber == 0 {
+    }
+    
+    return randomNumber
+}
+*/
+
 
 class ViewController: UIViewController {
     
@@ -26,21 +39,54 @@ let questions = GameQuestions()
 
     @IBOutlet weak var pressedButton: UILabel!
     
+    @IBOutlet weak var gameButtonYes: UIButton!
+    
+    @IBOutlet weak var gameButtonNo: UIButton!
+    
+    
     @IBAction func factButtonNo() {
-        gameQuestionLabel.text = questions.getRandomFact()
-        pressedButton.text = "You answered no?"
         let randomColor = ColorModel().getrandomColor()
         view.backgroundColor = randomColor
-
+        gameButtonNo.tintColor = randomColor
+        gameButtonYes.tintColor = randomColor
+        
+        
+       // let theLuckyNumber = TrueorFalseNumber()
+        
+        
+        /*if theLuckyNumber == 1 {
+            
+            gameQuestionLabel.text = questions.getRandomFalseFact()
+            
+        } else {
+            
+            gameQuestionLabel.text = questions.getRandomTrueFact()
+ 
+        }
+        */
     }
 
    
     @IBAction func factButtonYes(){
-        gameQuestionLabel.text = questions.getRandomFact()
-        pressedButton.text = "You answered yes?"
         let randomColor = ColorModel().getrandomColor()
         view.backgroundColor = randomColor
+        gameButtonYes.tintColor = randomColor
+        gameButtonNo.tintColor = randomColor
         
+        
+  /*
+
+        let theLuckyNumberTwo = TrueorFalseNumber
+        
+        
+        if theLuckyNumberTwo == 1 {
+            gameQuestionLabel.text = questions.getRandomFalseFact()
+            pressedButton.text = "Incorrect!"
+        } else {
+            gameQuestionLabel.text = questions.getRandomTrueFact()
+            pressedButton.text = "Correct!"
+        }
+*/
     }
 }
 
