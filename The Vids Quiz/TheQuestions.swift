@@ -17,9 +17,9 @@ let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the 
     
     var checker: Bool = true
     
-    let trueQuestions = ["In Destiny The King Is Dead?", "In Skyrim the DawnGuard are Vampire Hunters?", "In Fallout Bottlecaps are the main currency?", "In Pokemon the rarest Pokemon is a Shiny?", "In the Zelda Series Links horse is Epona","In Dragon Age Main series the only 2 Dwarf Followers are Oghren And Varric","In Skyrim a Sprrigan is a Nature Guardian", "In GTA 5 there are 3 main characters"]
+    let trueQuestions = ["In Destiny The King Is Dead?", "In Skyrim the DawnGuard are Vampire Hunters?", "In Fallout Bottlecaps are the main currency?", "In Pokemon the rarest Pokemon is a Shiny?", "In the Zelda Series Links horse is Epona","In Dragon Age Main series the only 2 Dwarf Followers are Oghren And Varric","In Skyrim a Sprrigan is a Nature Guardian", "In GTA 5 there are 3 main characters", "Swift is very glitchy", "In Avatar the last Airbender Aang was 113 years old.", ""]
     
-    let falseQuestions = ["Are you able to destroy the Moon in Zelda Majoras Mask","Is the SSG 08 the strongest Sniper in CSGO"]
+    let falseQuestions = ["Are you able to destroy the Moon in Zelda Majoras Mask","Is the SSG 08 the strongest Sniper in CSGO", "In Fallout 4 you are in Vegas", "In Halo 3 the arbiter is a brute.", "In Fallout 3 the goal is to get Hoover dam", "In Red vs. Blue Tucker is on red team","In New super mario bros (For Wii) when you get 99 lives your hat comes off", ""]
     
     func TrueorFalseNumber() -> Int {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(2)
