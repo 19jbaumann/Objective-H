@@ -64,6 +64,7 @@
                     <connections>
                         <outlet property="gameButtonNo" destination="b00-oW-0bq" id="2fG-0G-jw4"/>
                         <outlet property="gameButtonYes" destination="6dx-Yi-Agi" id="vl9-2v-Afm"/>
+                        <outlet property="gameQuestionLabel" destination="DI2-Nd-diL" id="C2N-kH-yt0"/>
                         <outlet property="pressedButton" destination="UwE-lf-8iP" id="zEc-xj-hfP"/>
                     </connections>
                 </viewController>

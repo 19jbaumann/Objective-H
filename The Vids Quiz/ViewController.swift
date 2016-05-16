@@ -9,16 +9,14 @@
 import UIKit
 import GameKit
 
-/*
+
 func TrueorFalseNumber() -> Int {
     let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(2)
-    
-    if randomNumber == 0 {
-    }
+print(randomNumber)
     
     return randomNumber
 }
-*/
+
 
 
 class ViewController: UIViewController {
@@ -51,10 +49,10 @@ let questions = GameQuestions()
         gameButtonYes.tintColor = randomColor
         
         
-       // let theLuckyNumber = TrueorFalseNumber()
+       let theLuckyNumber = TrueorFalseNumber()
         
         
-        /*if theLuckyNumber == 1 {
+        if theLuckyNumber == 1 {
             
             gameQuestionLabel.text = questions.getRandomFalseFact()
             
@@ -63,7 +61,7 @@ let questions = GameQuestions()
             gameQuestionLabel.text = questions.getRandomTrueFact()
  
         }
-        */
+        
     }
 
    
@@ -74,9 +72,9 @@ let questions = GameQuestions()
         gameButtonNo.tintColor = randomColor
         
         
-  /*
+  
 
-        let theLuckyNumberTwo = TrueorFalseNumber
+        let theLuckyNumberTwo = TrueorFalseNumber()
         
         
         if theLuckyNumberTwo == 1 {
@@ -86,7 +84,7 @@ let questions = GameQuestions()
             gameQuestionLabel.text = questions.getRandomTrueFact()
             pressedButton.text = "Correct!"
         }
-*/
+
     }
 }
 

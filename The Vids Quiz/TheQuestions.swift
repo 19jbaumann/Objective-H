@@ -21,23 +21,17 @@ let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the 
     
     let falseQuestions = ["Are you able to destroy the Moon in Zelda Majoras Mask","Is the SSG 08 the strongest Sniper in CSGO" ,"In Halo 4 is Cortana on your team?", "In csgo when you are on a ladder are your shot accurate?", "In Minecraft the creepers the only enemy that explode","If hue does hue HUE"]
     
-    func TrueorFalseNumber() -> Int {
-        let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(2)
-        
-        
-        return randomNumber
-    }
 
     func getRandomFalseFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(falseQuestions.count)
-        
+        print(randomNumber)
         return falseQuestions[randomNumber]
         
     }
     
     func getRandomTrueFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(trueQuestions.count)
-        
+        print(randomNumber)
         return trueQuestions[randomNumber]
     }
     
