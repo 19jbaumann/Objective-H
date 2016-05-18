@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -56,6 +57,9 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88066208960000003" green="0.86407088340000004" blue="0.19332875050000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DI2-Nd-diL" secondAttribute="trailing" constant="100" id="F8n-D7-Ifo"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="gameButtonNo" destination="b00-oW-0bq" id="2fG-0G-jw4"/>
