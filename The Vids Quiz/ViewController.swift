@@ -21,7 +21,7 @@ print(randomNumber)
 
 class ViewController: UIViewController {
     
-let questions = GameQuestions()
+var questions = GameQuestions()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +42,28 @@ let questions = GameQuestions()
     @IBOutlet weak var gameButtonNo: UIButton!
     
     
+    func questionAnswer() {
+        if questions.checker == false {
+            pressedButton.text = "Correct!"
+        } else {
+            pressedButton.text = "Wrong!"
+        }
+    }
+    
+    
+    
+    
     @IBAction func factButtonNo() {
         let randomColor = ColorModel().getrandomColor()
         view.backgroundColor = randomColor
         gameButtonNo.tintColor = randomColor
         gameButtonYes.tintColor = randomColor
+        gameQuestionLabel.text = questions.askQuestion()
         
+        questionAnswer()
+
+        
+        /*
         
        let theLuckyNumber = TrueorFalseNumber()
         
@@ -61,7 +77,7 @@ let questions = GameQuestions()
             gameQuestionLabel.text = questions.getRandomTrueFact()
  
         }
-        
+        */
     }
 
    
@@ -70,10 +86,13 @@ let questions = GameQuestions()
         view.backgroundColor = randomColor
         gameButtonYes.tintColor = randomColor
         gameButtonNo.tintColor = randomColor
+        gameQuestionLabel.text = questions.askQuestion()
+        
+        questionAnswer()
         
         
   
-
+/*
         let theLuckyNumberTwo = TrueorFalseNumber()
         
         
@@ -84,7 +103,7 @@ let questions = GameQuestions()
             gameQuestionLabel.text = questions.getRandomTrueFact()
             pressedButton.text = "Correct!"
         }
-
+*/
     }
 }
 
