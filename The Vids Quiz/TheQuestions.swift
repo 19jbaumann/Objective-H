@@ -68,6 +68,7 @@ let questions = ["Is there a Bomb in Wii Bowling", "Are you able to destroy the 
     
     
     
+    
 
     func getRandomFalseFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(falseQuestions.count)
