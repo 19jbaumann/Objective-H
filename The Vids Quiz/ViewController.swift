@@ -42,42 +42,27 @@ var questions = GameQuestions()
     @IBOutlet weak var gameButtonNo: UIButton!
     
     
-    func questionAnswer() {
-        if questions.checker == false {
-            pressedButton.text = "Correct!"
-        } else {
-            pressedButton.text = "Wrong!"
-        }
-    }
-    
-    
-    
-    
     @IBAction func factButtonNo() {
         let randomColor = ColorModel().getrandomColor()
         view.backgroundColor = randomColor
         gameButtonNo.tintColor = randomColor
         gameButtonYes.tintColor = randomColor
-        gameQuestionLabel.text = questions.askQuestion()
         
-        questionAnswer()
 
-        
-        /*
-        
-       let theLuckyNumber = TrueorFalseNumber()
-        
-        
-        if theLuckyNumber == 1 {
-            
-            gameQuestionLabel.text = questions.getRandomFalseFact()
-            
+        if questions.checker == false {
+            pressedButton.text = "Correct!"
+            questions.correctCounter = questions.correctCounter + 1
         } else {
-            
-            gameQuestionLabel.text = questions.getRandomTrueFact()
- 
+            pressedButton.text = "Wrong!"
         }
-        */
+       gameQuestionLabel.text = questions.askQuestion()
+        
+        questions.questionCounter = questions.questionCounter + 1
+        
+        if questions.questionCounter == 10 {
+            gameQuestionLabel.text = "Game over! Your score is %"
+        }
+
     }
 
    
@@ -86,24 +71,22 @@ var questions = GameQuestions()
         view.backgroundColor = randomColor
         gameButtonYes.tintColor = randomColor
         gameButtonNo.tintColor = randomColor
+        
+        
+        if questions.checker == false {
+            pressedButton.text = "Wrong!"
+        } else {
+            pressedButton.text = "Correct!"
+            questions.correctCounter = questions.correctCounter + 1
+        }
         gameQuestionLabel.text = questions.askQuestion()
         
-        questionAnswer()
+        questions.questionCounter = questions.questionCounter + 1
         
-        
-  
-/*
-        let theLuckyNumberTwo = TrueorFalseNumber()
-        
-        
-        if theLuckyNumberTwo == 1 {
-            gameQuestionLabel.text = questions.getRandomFalseFact()
-            pressedButton.text = "Incorrect!"
-        } else {
-            gameQuestionLabel.text = questions.getRandomTrueFact()
-            pressedButton.text = "Correct!"
+        if questions.questionCounter == 10 {
+            gameQuestionLabel.text = "Game over! Your score is %"
         }
-*/
+  
     }
 }
 
