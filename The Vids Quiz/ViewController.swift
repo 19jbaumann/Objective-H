@@ -22,6 +22,8 @@ print(randomNumber)
 class ViewController: UIViewController {
     
 var questions = GameQuestions()
+var correctCounter = 0.0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +49,11 @@ var questions = GameQuestions()
         view.backgroundColor = randomColor
         gameButtonNo.tintColor = randomColor
         gameButtonYes.tintColor = randomColor
-        
+
 
         if questions.checker == false {
             pressedButton.text = "Correct!"
-            questions.correctCounter = questions.correctCounter + 1
+            correctCounter = correctCounter + 1
         } else {
             pressedButton.text = "Wrong!"
         }
@@ -60,7 +62,7 @@ var questions = GameQuestions()
         questions.questionCounter = questions.questionCounter + 1
         
         if questions.questionCounter == 10 {
-            gameQuestionLabel.text = "Game over! Your score is %"
+            gameQuestionLabel.text = "Game over! Your score is \(correctCounter*10)%"
         }
 
     }
@@ -72,22 +74,22 @@ var questions = GameQuestions()
         gameButtonYes.tintColor = randomColor
         gameButtonNo.tintColor = randomColor
         
-        
         if questions.checker == false {
             pressedButton.text = "Wrong!"
         } else {
             pressedButton.text = "Correct!"
-            questions.correctCounter = questions.correctCounter + 1
+            correctCounter = correctCounter + 1
         }
         gameQuestionLabel.text = questions.askQuestion()
-        
+
         questions.questionCounter = questions.questionCounter + 1
-        
+
         if questions.questionCounter == 10 {
-            gameQuestionLabel.text = "Game over! Your score is %"
+
+            gameQuestionLabel.text = "Game over! Your score is \(correctCounter*10)%"
+
         }
   
     }
 }
-
 
