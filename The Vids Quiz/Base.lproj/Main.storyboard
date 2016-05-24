@@ -18,30 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b00-oW-0bq">
-                                <rect key="frame" x="351" y="420" width="140" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b00-oW-0bq">
+                                <rect key="frame" x="411" y="470" width="80" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IyW-w2-g66"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Oqx-ll-NIu"/>
+                                </constraints>
                                 <state key="normal" title="No"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IyW-w2-g66"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="factButtonNo" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjr-Oo-xV3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwE-lf-8iP">
-                                <rect key="frame" x="207" y="49" width="186" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwE-lf-8iP">
+                                <rect key="frame" x="213" y="100" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.77169552364864868" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-Yi-Agi">
-                                <rect key="frame" x="101" y="420" width="140" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <state key="normal" title="Yes"/>
-                                <connections>
-                                    <action selector="factButtonYes" destination="BYZ-38-t0r" eventType="touchUpInside" id="7eC-me-6W6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Are you ready for this quiz?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI2-Nd-diL">
-                                <rect key="frame" x="109" y="152" width="382" height="202"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Are you ready for this quiz?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI2-Nd-diL">
+                                <rect key="frame" x="102" y="69" width="382" height="202"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="upn-lr-UvW"/>
                                 </constraints>
@@ -49,18 +50,40 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-Yi-Agi">
+                                <rect key="frame" x="109" y="470" width="80" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="AFQ-Fv-Jcx"/>
+                                </constraints>
+                                <state key="normal" title="Yes"/>
+                                <connections>
+                                    <action selector="factButtonYes" destination="BYZ-38-t0r" eventType="touchUpInside" id="7eC-me-6W6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88066208960000003" green="0.86407088340000004" blue="0.19332875050000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b00-oW-0bq" secondAttribute="bottom" constant="100" id="ACy-Cb-JeT"/>
                             <constraint firstItem="DI2-Nd-diL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="200" id="BTo-hF-tXI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b00-oW-0bq" secondAttribute="trailing" constant="89" id="NUy-4j-jt4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b00-oW-0bq" secondAttribute="trailing" constant="89" id="Opx-5B-9Wj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6dx-Yi-Agi" secondAttribute="bottom" constant="100" id="Voq-P1-jmg"/>
                             <constraint firstItem="DI2-Nd-diL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="Zir-Lm-Iah"/>
+                            <constraint firstItem="DI2-Nd-diL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="250" id="cnc-Z2-qeD"/>
                             <constraint firstItem="6dx-Yi-Agi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="fHI-BI-Pej"/>
                             <constraint firstItem="b00-oW-0bq" firstAttribute="leading" secondItem="6dx-Yi-Agi" secondAttribute="trailing" constant="89" id="nDJ-bu-Kt9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DI2-Nd-diL" secondAttribute="trailing" constant="89" id="ndU-Dr-lNp"/>
+                            <constraint firstItem="UwE-lf-8iP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="nyL-4f-eak"/>
                             <constraint firstItem="b00-oW-0bq" firstAttribute="leading" secondItem="6dx-Yi-Agi" secondAttribute="trailing" constant="89" id="tzw-5X-yjO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Opx-5B-9Wj"/>
+                                <exclude reference="nDJ-bu-Kt9"/>
+                                <exclude reference="tzw-5X-yjO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="gameButtonNo" destination="b00-oW-0bq" id="2fG-0G-jw4"/>
@@ -71,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="376"/>
+            <point key="canvasLocation" x="329" y="315"/>
         </scene>
     </scenes>
 </document>
