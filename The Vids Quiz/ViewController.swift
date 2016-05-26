@@ -48,7 +48,10 @@ var correctCounter = 0.0
         view.backgroundColor = randomColor
         gameButtonNo.tintColor = randomColor
         gameButtonYes.tintColor = randomColor
-
+        
+        if questions.questionCounter == 25 || gameQuestionLabel.text == "Game over! Your score is \(correctCounter/25*100)% Would you like to play again?" {
+            gameQuestionLabel.text = questions.trueQuestions[100]
+        }
         
         if questions.checker == false {
             pressedButton.text = "Correct!"
@@ -61,9 +64,11 @@ var correctCounter = 0.0
         
         questions.questionCounter = questions.questionCounter + 1
         
-        if questions.questionCounter == 10 {
-            gameQuestionLabel.text = "Game over! Your score is \(correctCounter*10)%"
-        }
+        if questions.questionCounter == 25 {
+            gameQuestionLabel.text = "Game over! Your score is \(correctCounter/25*100)% Would you like to play again?"
+           }
+        
+        
 
     }
 
@@ -86,11 +91,15 @@ var correctCounter = 0.0
 
         questions.questionCounter = questions.questionCounter + 1
 
-        if questions.questionCounter == 10 {
-
-            gameQuestionLabel.text = "Game over! Your score is \(correctCounter*10)%"
-
+        if questions.questionCounter == 25 {
+            gameQuestionLabel.text = "Game over! Your score is \(correctCounter*10)% Would you like to play again?"
         }
+        
+        if questions.questionCounter == 25 || gameQuestionLabel.text == "Game over! Your score is \(correctCounter/25*100)% Would you like to play again?" {
+            questions = GameQuestions()
+            correctCounter = 0.0
+        }
+        
   
     }
 }
