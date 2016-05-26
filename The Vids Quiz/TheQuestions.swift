@@ -45,30 +45,6 @@ struct GameQuestions {
     }
     
     
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    var lol = "Hue"
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     func getRandomFalseFact() -> String {
         let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(falseQuestions.count)

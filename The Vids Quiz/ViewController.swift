@@ -24,7 +24,6 @@ class ViewController: UIViewController {
 var questions = GameQuestions()
 var correctCounter = 0.0
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +41,12 @@ var correctCounter = 0.0
     @IBOutlet weak var gameButtonYes: UIButton!
     
     @IBOutlet weak var gameButtonNo: UIButton!
+
+   
+    
+    func startingQuestion() {
+        gameQuestionLabel.text = questions.askQuestion()
+    }
     
     
     @IBAction func factButtonNo() {
@@ -50,14 +55,15 @@ var correctCounter = 0.0
         gameButtonNo.tintColor = randomColor
         gameButtonYes.tintColor = randomColor
 
-
+        
         if questions.checker == false {
             pressedButton.text = "Correct!"
             correctCounter = correctCounter + 1
         } else {
             pressedButton.text = "Wrong!"
         }
-       gameQuestionLabel.text = questions.askQuestion()
+        
+            gameQuestionLabel.text = questions.askQuestion()
         
         questions.questionCounter = questions.questionCounter + 1
         
@@ -80,7 +86,9 @@ var correctCounter = 0.0
             pressedButton.text = "Correct!"
             correctCounter = correctCounter + 1
         }
-        gameQuestionLabel.text = questions.askQuestion()
+        
+            gameQuestionLabel.text = questions.askQuestion()
+        
 
         questions.questionCounter = questions.questionCounter + 1
 
