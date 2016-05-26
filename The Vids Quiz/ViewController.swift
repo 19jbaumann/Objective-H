@@ -41,12 +41,6 @@ var correctCounter = 0.0
     @IBOutlet weak var gameButtonYes: UIButton!
     
     @IBOutlet weak var gameButtonNo: UIButton!
-
-   
-    
-    func startingQuestion() {
-        gameQuestionLabel.text = questions.askQuestion()
-    }
     
     
     @IBAction func factButtonNo() {
