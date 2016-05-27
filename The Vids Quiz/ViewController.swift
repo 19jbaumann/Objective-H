@@ -9,6 +9,7 @@
 import UIKit
 import GameKit
 
+//this generates a random number of 0 or 1. The number helps pick whether the question is true or false
 
 func TrueorFalseNumber() -> Int {
     let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(2)
@@ -20,7 +21,8 @@ print(randomNumber)
 
 
 class ViewController: UIViewController {
-    
+  
+    //These help with your score
 var questions = GameQuestions()
 var correctCounter = 0.0
 
@@ -34,6 +36,9 @@ var correctCounter = 0.0
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    //These are all the buttons and labels
     @IBOutlet weak var gameQuestionLabel: UILabel!
 
     @IBOutlet weak var pressedButton: UILabel!
@@ -42,6 +47,10 @@ var correctCounter = 0.0
     
     @IBOutlet weak var gameButtonNo: UIButton!
     
+    
+    
+    
+   //This is the NO button
     
     @IBAction func factButtonNo() {
         let randomColor = ColorModel().getrandomColor()
@@ -72,6 +81,8 @@ var correctCounter = 0.0
 
     }
 
+    
+    //This is the YES button
    
     @IBAction func factButtonYes(){
         let randomColor = ColorModel().getrandomColor()
@@ -92,7 +103,7 @@ var correctCounter = 0.0
         questions.questionCounter = questions.questionCounter + 1
 
         if questions.questionCounter == 25 {
-            gameQuestionLabel.text = "Game over! Your score is \(correctCounter*10)% Would you like to play again?"
+            gameQuestionLabel.text = "Game over! Your score is \(correctCounter/25*100)% Would you like to play again?"
         }
         
         if questions.questionCounter == 25 || gameQuestionLabel.text == "Game over! Your score is \(correctCounter/25*100)% Would you like to play again?" {
@@ -103,4 +114,10 @@ var correctCounter = 0.0
   
     }
 }
+
+// This is our Quiz app! Made by Jaschon, Tiger, and Matt. Enjoy!
+
+
+
+
 

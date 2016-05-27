@@ -6,6 +6,11 @@
 //  Copyright © 2016 Objective-Hue. All rights reserved.
 
 
+
+
+
+//This whole structure makes the quiz change colors every time you press a button!
+
 import UIKit
 import GameKit
 struct ColorModel {
